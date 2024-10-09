@@ -21,7 +21,47 @@ class Program
             Console.WriteLine("5. Salvar e sair");
             string opcao = Console.ReadLine();
 
+        switch(opcao)
+        {
+            case "1":
+            CadastrarLivro();
+            break;
+
+            case "2":
+            ConsultarCatalogo();
+            break;
+
+            case "3":
+            EmprestarLivro();
+            break;
+
+            case "4":
+            DevolverLivro();
+            break;
+
+            case "5":
+            SalvarCatalogo();
+            return;
+            default;
+            Console.WriteLine("Opção inválida. ");
+            break;
             
 
+        }    
+
     }
+}
+
+static void CadastrarLivro()
+{
+    Console.Write("Título: ");
+    string titulo = Console.ReadLine();
+
+    Console.Write("Autor: ")
+    string autor = Console.ReadLine();
+
+    Console.Write("Quantidade disponível: ");
+    int quantidade = int.Parse(Console.ReadLine());
+
+  
 }
