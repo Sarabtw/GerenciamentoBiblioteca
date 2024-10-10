@@ -66,3 +66,7 @@ static void CadastrarLivro()
     catalogo.Add(new Livro(titulo, autor, quantidade));
     Console.WriteLine("Livro cadastrado com sucesso!");
 }
+
+  static void ConsultarCatalogo()
+    {
+        
