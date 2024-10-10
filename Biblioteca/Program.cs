@@ -12,7 +12,7 @@ class Program
 
         while (true)
         {
-            Console.Clear();
+            
             Console.WriteLine("\nMenu Biblioteca:");
             Console.WriteLine("1. Cadastrar livro");
             Console.WriteLine("2. Consultar catálogo");
