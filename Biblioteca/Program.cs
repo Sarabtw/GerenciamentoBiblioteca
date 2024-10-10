@@ -126,3 +126,42 @@ static void CadastrarLivro()
       }
       Console.WriteLine("Catálogo salvo com sucesso!");
     }
+
+    static void CarregarCatalogo()
+    {
+        if(File.Exists("catalogo.txt"))
+        {
+            using(StreamReader reader = new StreamReader("catalogo.txt"))
+            {
+                string linha;
+              while ((linha = reader.ReadLine()) != null)
+              {
+                string[] = linha.Split(';');
+                string titulo = dados[0];
+                string autor = dados[1];
+                int quantidade = int.Parse(dados[2]);
+                catalogo.Add(new Livro(titulo, autor, quantidade));
+              }
+            }
+            Console.WriteLine("Catálogo carregado com sucesso!");
+        }
+        else
+        {
+            Console.WriteLine("Nenhum catálogo encontrado.");
+        }
+    }
+}
+class Livro
+{
+    public string Titulo {get; set;}
+    public string Autor  {get; set;}
+    public int QuantidadeDisponivel {get; set;}
+
+    public Livro {string titulo, string autor, int quantidade}
+    {
+        Titulo = titulo;
+        Autor = autor;
+        QuantidadeDisponivel = quantidade; 
+    }
+
+}
