@@ -1,0 +1,5 @@
+C:\Users\Alunos\OneDrive\Documents\Sara\GerenciamentoBiblioteca\Biblioteca\obj\Debug\net8.0\Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alunos\OneDrive\Documents\Sara\GerenciamentoBiblioteca\Biblioteca\obj\Debug\net8.0\Biblioteca.AssemblyInfoInputs.cache
+C:\Users\Alunos\OneDrive\Documents\Sara\GerenciamentoBiblioteca\Biblioteca\obj\Debug\net8.0\Biblioteca.AssemblyInfo.cs
+C:\Users\Alunos\OneDrive\Documents\Sara\GerenciamentoBiblioteca\Biblioteca\obj\Debug\net8.0\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Alunos\OneDrive\Documents\Sara\GerenciamentoBiblioteca\Biblioteca\obj\Debug\net8.0\Biblioteca.sourcelink.json
