@@ -63,5 +63,6 @@ static void CadastrarLivro()
     Console.Write("Quantidade disponível: ");
     int quantidade = int.Parse(Console.ReadLine());
 
-  
+    catalogo.Add(new Livro(titulo, autor, quantidade));
+    Console.WriteLine("Livro cadastrado com sucesso!");
 }
