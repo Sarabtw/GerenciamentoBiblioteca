@@ -69,4 +69,14 @@ static void CadastrarLivro()
 
   static void ConsultarCatalogo()
     {
-        
+        Console.WriteLine("\nCatálogo de livros:");
+        foreach (var livro in catalogo)
+        {
+            Console.WriteLine($"Título: {livro.Titulo}, Autor: {livro.Autor}, Disponível: {livro.QuantidadeDisponivel}");
+        }
+    }   
+
+     static void EmprestarLivro()
+    {
+        Console.Write("Digite o título do livro que deseja emprestar: ");
+        string titulo = Console.ReadLine();
