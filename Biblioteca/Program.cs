@@ -62,10 +62,10 @@ class Program
 
     static void ConsultarCatalogo()
     {
-        Console.WriteLine("\nCatálogo de Livros:");
+        Console.WriteLine("\nCatálogo de livros:");
         foreach (var livro in catalogo)
         {
-            Console.WriteLine($"Título: {livro.Titulo}, Autor: {livro.Autor}, Quantidade: {livro.Quantidade}");
+            Console.WriteLine($"Título: {livro.Titulo}, Autor: {livro.Autor}, Disponível: {livro.QuantidadeDisponivel}");
         }
     }
 
