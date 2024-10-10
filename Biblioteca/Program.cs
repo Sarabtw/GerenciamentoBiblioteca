@@ -80,3 +80,41 @@ static void CadastrarLivro()
     {
         Console.Write("Digite o título do livro que deseja emprestar: ");
         string titulo = Console.ReadLine();
+
+      Livro livro = catalogo.Find(l => l.Titulo.ToLower() == titulo.ToLower());
+
+        if (livro != null && livro.QuantidadeDisponivel > 0)
+        {
+            livro.QuantidadeDisponivel--;
+            Console.WriteLine($"Você emprestou o livro '{livro.Titulo}'.");
+        }
+        else
+        {
+            Console.WriteLine("Livro indiisponível.");
+
+        }
+    }
+    static void DevolverLivro() 
+    {
+        Console.Write("Digite o título do livro que deseja devolver: ");
+        string titulo = Console.ReadLine();
+
+        Livro livro = catalogo.Find(l => l.Titulo.ToLower() == titulo.ToLower());
+
+        if ( livro != null )
+        {
+            livro.QuantidadeDisponivel++;
+            Console.WriteLine($"Você devolveu o livro: {livro.Titulo}");
+
+        } 
+        else 
+        {
+            Console.WriteLine("Livro não encontrado.");
+
+        }
+    }
+
+    static void SalvarCatalogo()
+    {
+      using(StreamWriter writer = new StreamWriter)
+    }
