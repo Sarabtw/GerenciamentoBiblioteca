@@ -116,5 +116,13 @@ static void CadastrarLivro()
 
     static void SalvarCatalogo()
     {
-      using(StreamWriter writer = new StreamWriter)
+      using(StreamWriter writer = new StreamWriter("catalogo.txt"))
+      {
+        foreach(var livro in catalogo)
+        {
+            writer.WriterLine($"{livro.Livro};{livro.Autor};{livro.QuantidadeDisponivel}");
+           
+        }
+      }
+      Console.WriteLine("Catálogo salvo com sucesso!");
     }
